@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/a"
+    android:gravity="center">
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="30sp"
+                android:gravity="center"
+                android:text="@string/emptitle"
+                android:textSize="35dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/bangers"
+                android:textStyle="bold"
+                android:textColor="@color/white"/>
+
+        <ImageView
+            android:layout_width="216dp"
+            android:layout_height="152dp"
+            android:gravity="center"
+            android:src="@drawable/salary_icon" />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Employee FirstName"
+                android:id="@+id/edt_emp_name"
+                android:textColorHint="@color/black"
+                android:textSize="20sp"
+                android:textColor="@color/white"
+                android:textStyle="italic" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Employee Last Name"
+            android:id="@+id/edt_emp_lastname"
+            android:textColorHint="@color/black"
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            android:textStyle="italic" />
+
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/bank"
+                android:id="@+id/edt_emp_bacc"
+                android:textColorHint="@color/black"
+                android:textSize="20sp"
+                android:textColor="@color/white"
+                android:textStyle="italic" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/pan_no"
+                android:id="@+id/edt_emp_pan"
+                android:textColorHint="@color/black"
+                android:textSize="20sp"
+                android:textColor="@color/white"
+                android:textStyle="italic" />
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/departmenmt"
+            android:id="@+id/edt_emp_dept"
+            android:textColorHint="@color/black"
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            android:textStyle="italic" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/designation"
+            android:id="@+id/edt_emp_design"
+            android:textColorHint="@color/black"
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            android:textStyle="italic" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/mobile_no"
+            android:id="@+id/edt_emp_mobile"
+            android:textColorHint="@color/black"
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            android:textStyle="italic" />
+
+
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/empsalary"
+                android:id="@+id/edt_emp_sal"
+                android:textColorHint="@color/black"
+                android:textSize="20sp"
+                android:textColor="@color/white"
+                android:textStyle="italic" />
+
+
+
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/emptax"
+                android:id="@+id/edt_emp_tax"
+                android:textSize="20sp"
+                android:textStyle="italic"
+                android:textColor="@color/white"
+                android:textColorHint="@color/black"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/empnetsal"
+                android:textSize="20sp"
+                android:id="@+id/edt_emp_net_sal"
+                android:textStyle="italic"
+                android:textColor="@color/white"
+                android:textColorHint="@color/black"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btn_show"
+                android:background="#BA144C"
+                android:text="SHOW"
+                android:layout_marginRight="20sp"/>
+
+            <Button
+                android:id="@+id/btn_credit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#BA144C"
+                android:text="Credit" />
+
+            <Button
+                android:id="@+id/btn_cnl"
+                android:layout_width="114dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20sp"
+                android:background="@color/teal_700"
+                android:text="@string/btncancel" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="end"
+            android:layout_margin="10dp"
+            android:textSize="20dp"
+            android:textColor="@color/white"
+            android:text="~From EMS" />
+
+
+    </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>
